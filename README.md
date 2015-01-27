@@ -1,3 +1,3 @@
-# nichekie
+# [Nichekie.com](http://nichekie.com)
 
-a [Sails](http://sailsjs.org) application
+Repo for the main nichekie site
