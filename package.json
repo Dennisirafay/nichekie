@@ -2,7 +2,7 @@
   "name": "nichekie",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Nichekie Website - http://nichekie.com",
   "keywords": [],
   "dependencies": {
     "sails": "~0.10.5",
@@ -30,8 +30,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/nichekie.git"
+    "url": "git://github.com/nichekie/nichekie.git"
   },
-  "author": "anonymous node/sails user",
-  "license": ""
+  "author": "Kado Damball",
+  "license": "MIT"
 }
