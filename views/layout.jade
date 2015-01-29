@@ -1,0 +1,35 @@
+doctype html
+
+html(lang="en")
+    head
+        if pageTitle
+            title #{pageTitle}
+        else
+            title Nichekie - Lets Get You Offers
+
+        block styles
+            link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+            link(rel="stylesheet" href="/styles/main.css")
+
+        block scripts
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
+
+
+
+    body
+        block header
+            header.navbar.navbar-default.container-fluid(role="banner")
+                .container
+                    .navbar-header
+                        a.navbar-brand(href="/") Nichekie
+                    .navbar-collapse
+                        ul.nav.navbar-nav.navbar-right
+                            li
+                                a(href="/about") ABOUT
+                            li
+                                a(href="/companies") COMPANIES
+                            li
+                                a(href="/contact") CONTACT
+
+        .content
+            block content
