@@ -8,3 +8,9 @@ PROJECT MEMBERS:
 
     - Logistics Lead / Legal Head
         - Bwire Munubi
+
+
+SITE:
+    
+    - Technology stack
+        - Node.js, Sails.js, JavaScript 
