@@ -117,6 +117,9 @@ nbproject
 .idea
 .node_history
 
-#Some Idea Files
+
+#############################
+#Some Idea Files and placeholder files
 
 views/layout.md
+assets/images/placeholder*
