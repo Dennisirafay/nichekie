@@ -20,12 +20,13 @@ body
     .content
         margin-bottom: 20px
         
-        .container-fluid
+        .container-fluid, .container
             padding-left: 0
             padding-right: 0
             
             .jumbotron
                 height: 400px
+                background-color: rgba(9,92,137,0.6)
                 background-image: url("/images/placeholder_bg_header.jpg")
                 background-size: cover
                 background-repeat: no-repeat
@@ -36,9 +37,12 @@ body
                 margin-right: auto
                 
     footer
+        min-height: 100px
         background-color: #095C89
         color: #D9F2FF
-        a
-            color: #D9F2FF
-            &:hover
-                color: #fff
+        p
+            margin: 20px
+            a
+                color: #D9F2FF
+                &:hover
+                    color: #fff
