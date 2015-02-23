@@ -41,11 +41,16 @@ module.exports.routes = {
   },
 
   '/companies': {
-    view: 'companies'
+    view: 'companies',
+    locals: require('../api/controllers/CompaniesController')
   },
 
   '/contact': {
     view: 'contact'
+  },
+
+  '/subscribe': {
+    view: 'subscribe'
   }
 
   /***************************************************************************

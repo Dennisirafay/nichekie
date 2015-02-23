@@ -1,1 +1,16 @@
 extends layout
+
+block append styles
+    link(rel="stylesheet" href="/styles/companies.css")
+
+block content
+    .container-fluid
+        .jumbotron
+            h1 #{main_campaign}
+
+        .row.container
+            each campaign, index in campaigns
+                .col-sm-3 
+                    h3 
+                        a( href='#{campaign.url}') #{campaign.name}
+                    | #{campaign.tagline}
