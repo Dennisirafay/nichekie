@@ -1,49 +1,12 @@
-// Main Layout CSS
-body
-    header.navbar-default
-        background-color: #095C89
-        color: #dddddd
-        border-radius: 0
-        margin-bottom: 0
-        
-        a.navbar-brand
-            color: #D9F2FF
-            &:hover
-                color: #fff
-        .navbar-nav.navbar-right
-            li a
-                color: #FFF
-                &:hover
-                    color: #FFF
-                    background-color: rgba(0,0,0,0.1)
+// Main Layout file
+@import 'layout.styl'
 
-    .content
-        margin-bottom: 20px
-        
-        .container-fluid, .container
-            width: 100%
-            padding-left: 0
-            padding-right: 0
-            
-            .jumbotron
-                height: 400px
-                background-color: rgba(9,92,137,0.6)
-                background-image: url("/images/shopping.jpg")
-                background-size: 100% 100%
-                background-repeat: no-repeat
-                background-position: 0 55%
-            
-            .row.container
-                margin-left: auto
-                margin-right: auto
-                
-    footer
-        min-height: 100px
-        background-color: #095C89
-        color: #D9F2FF
-        p
-            margin: 20px
-            a
-                color: #D9F2FF
-                &:hover
-                    color: #fff
+@import 'homepage.styl'
+
+@import 'companies.styl'
+
+@import 'about.styl'
+
+@import 'subscribe.styl'
+
+@import 'contact.styl'
