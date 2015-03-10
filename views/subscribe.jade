@@ -5,6 +5,32 @@ block content
         .jumbotron
             h1 Subscribe for the latest deals
 
-        .row.container
+        #form-container.row.container
             .col-sm-12
-                //- Put the form stuff here
+                form.form-horizontal(role="form" action="/subscribe" method="post")
+                    .form-group.col-sm-8
+                        label.col-sm-3(for="name") 
+                            h4 
+                                strong Full Name:
+                        .col-sm-8
+                            input#name.form-control.input-lg(placeholder="Please Enter Your First and Last Names")
+                    .form-group.col-sm-8
+                            label.col-sm-3(for="email") 
+                                h4 
+                                    strong Email:
+                            .col-sm-8
+                                input#email.form-control.input-lg(placeholder="someone@example.com")
+
+                    .form-group.col-sm-8
+                            label.col-sm-3(for="phone") 
+                                h4 
+                                    strong Phone Number:
+                            .col-sm-8
+                                input#phone.form-control.input-lg(placeholder="0123-456-789")
+
+                    .form-group.col-sm-8
+                        button#submit.btn.btn-primary.btn-lg(type="submit") Submit
+
+
+
+                
