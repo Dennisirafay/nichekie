@@ -23,7 +23,8 @@ html(lang="en")
                 .container
                     .navbar-header
                         a.navbar-brand(href="/") Nichekie
-                    .navbar-collapse
+                        a.navbar-brand.menu(data-toggle="collapse" data-target="#menu") Menu
+                    .navbar-collapse.collapse#menu(aria-expanded="false")
                         ul.nav.navbar-nav.navbar-right
                             li
                                 a(href="/about") ABOUT
