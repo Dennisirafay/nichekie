@@ -4,7 +4,7 @@ module.exports = {
 
     subscribe: function (req, res){
 
-        Subscriber.subscribe({
+        return Subscriber.subscribe({
             name: req.param('name'),
             email: req.param('email'),
             phone: req.param('phone'),
