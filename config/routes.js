@@ -49,9 +49,11 @@ module.exports.routes = {
     view: 'contact'
   },
 
-  '/subscribe': {
+  'POST /subscribe': "SubscribeController.subscribe",
+
+  'GET /subscribe': {
     view: 'subscribe'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *

@@ -3,12 +3,12 @@
 module.exports = {
     attributes: {
         name: {
-            type: 'name',
-            require: true
+            type: 'string',
+            required: true
         },
 
         email: {
-            type: 'email',
+            type: 'string',
             required: false
         },
 
@@ -19,13 +19,7 @@ module.exports = {
     },
 
     subscribe: function (inputs, cb){
-
-        Subscriber.create({
-
-            name: inputs.name,
-            email: inputs.email,
-            phone: inputs.phone
-
-        }).exec(cb);
+        console.log(inputs);
+        Subscriber.create(inputs).exec(cb);
     }
 }
