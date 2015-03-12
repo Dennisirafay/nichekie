@@ -19,7 +19,7 @@ module.exports = {
     },
 
     subscribe: function (inputs, cb){
-        console.log(inputs);
+        
         Subscriber.create(inputs).exec(cb);
     }
 }
