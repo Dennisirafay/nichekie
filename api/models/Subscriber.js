@@ -8,7 +8,7 @@ module.exports = {
         },
 
         email: {
-            type: 'string',
+            type: 'email',
             required: false
         },
 
