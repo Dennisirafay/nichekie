@@ -19,6 +19,8 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.connections.html
  */
 
+var local = require('./local');
+
 module.exports.connections = {
 
   localDiskDb: {
@@ -26,12 +28,6 @@ module.exports.connections = {
   },
 
 
-  MySQL: {
-    adapter: 'sails-mysql',
-    host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-    user: 'YOUR_MYSQL_USER',
-    password: 'YOUR_MYSQL_PASSWORD',
-    database: 'YOUR_MYSQL_DB'
-  }
+  MySQL: local.MySQL
 
 };
