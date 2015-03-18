@@ -19,15 +19,15 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.connections.html
  */
 
-var local = require('./local');
-
 module.exports.connections = {
 
   localDiskDb: {
     adapter: 'sails-disk'
   },
 
-
-  MySQL: local.MySQL
+  // Other configs are in config/local.js
+  MySQL: {
+    adapter: 'sails-mysql'
+  }
 
 };
